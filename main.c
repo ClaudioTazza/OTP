@@ -10,11 +10,11 @@ int main(){
 
   puts("PASSWORD");
   fgets(pwd, NELEM, stdin);
-  
+
   pwd[NELEM - 1] = '\0';
   lPass = strlen(pwd);
 
-  for(; i < NELEM; ++i){
+  for(; i < lPass; ++i){
     printf("%c", pwd[i]);
   }
   /*while ((c = getchar()) != EOF){
