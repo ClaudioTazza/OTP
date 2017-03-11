@@ -10,17 +10,21 @@ int main(){
 
   puts("PASSWORD");
   fgets(pwd, NELEM, stdin);
+  
   pwd[NELEM - 1] = '\0';
   lPass = strlen(pwd);
 
-  while ((c = getchar()) != EOF){
+  for(; i < NELEM; ++i){
+    printf("%c", pwd[i]);
+  }
+  /*while ((c = getchar()) != EOF){
     if(c >= 65 && c <= 90)
-    c = (c + (pwd[i++] - 'A') - 'A') % 25 + 'A';
+      c = (c + (pwd[i++] - 'A') - 'A') % 26 + 'A';
 
     if(i > lPass) i = 0;
 
     putchar(c);
-  }
+  }*/
 
 
   return 0;
