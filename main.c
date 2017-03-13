@@ -19,7 +19,7 @@ int main(){
       c = ( (c - ' ') + (pwd[i++] - ' ') ) % 94 + ' ';
     }
 
-    if(i == lPass) i = 0;
+    if(i > lPass) i = 0;
     putchar(c);
   }
 
