@@ -9,15 +9,15 @@ int main(){
   unsigned int i = 0, lPass;
 
   do{
-  printf("CHOOSE YOUR PASSWORD: ");
-  fgets(pwd, NELEM, stdin);
-  //Inerisci la Pass
+    printf("CHOOSE YOUR PASSWORD: ");
+    fgets(pwd, NELEM, stdin);
+    //Inerisci la Pass
 
-  lPass = strlen(pwd) - 1;
-  //Lunghezza Pass
+    lPass = strlen(pwd) - 1;
+    //Lunghezza Pass
 
-  if(lPass <= 0)
-    puts("PLEASE INSERT A PASSWORD\n");
+    if(lPass <= 0)
+      puts("PLEASE INSERT A PASSWORD\n");
   }while(lPass <= 0);
   
   while ((c = getchar()) != EOF)
