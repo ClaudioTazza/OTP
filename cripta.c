@@ -8,6 +8,8 @@ int main(){
   char c, choose, pwd[NELEM];
   unsigned int i = 0, lPass;
 
+  puts("WARNING\n PLEASE DON'T USE STRESSED LETTERS");
+
   do{
     printf("CHOOSE YOUR PASSWORD: ");
     fgets(pwd, NELEM, stdin);
