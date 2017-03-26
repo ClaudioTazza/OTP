@@ -8,7 +8,7 @@ int main(){
   char c, choose, pwd[NELEM];
   int i = 0, lPass;
 
-  printf("PASSWORD: ");
+  printf("CHOOSE YOUR PASSWORD: ");
   fgets(pwd, NELEM, stdin);
   //Inerisci la Pass
 
