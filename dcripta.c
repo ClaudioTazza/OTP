@@ -27,8 +27,8 @@ int main(){
     if(lPass > i) i = 0;
     //se la password e' più corta del messaggio la ripete
 
-    if(c >= 32 && c <= 126){
-      c = ( (c - ' ') - (pwd[i++] - ' ') + 94 ) %94 + ' ';
+    if(c >= 32 && c <= 255){
+      c = ( (c - ' ') - (pwd[i++] - ' ') + 223 ) %223 + ' ';
     }//Se il messaggio e' compreso da caratteri consentiti converte i caratteri 
 
     putchar(c);//Stampa
