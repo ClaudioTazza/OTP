@@ -8,7 +8,7 @@ int main(){
   char c, choose, pwd[NELEM];
   unsigned int i = 0, lPass;
 
-  puts("WARNING\n PLEASE DON'T USE STRESSED LETTERS");
+  puts("WARNING\nPLEASE DON'T USE STRESSED LETTERS\n");
 
   do{
     printf("CHOOSE YOUR PASSWORD: ");
