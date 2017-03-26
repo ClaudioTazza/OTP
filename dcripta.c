@@ -6,8 +6,9 @@
 
 int main(){
   char c, choose, pwd[SIZE];
-  int i = 0, lPass;
+  unsigned int i = 0, lPass;
 
+  do{
   printf("INSERT PASSWORD: ");
   fgets(pwd, SIZE, stdin);
   //Inerisci la Pass
@@ -15,6 +16,11 @@ int main(){
   lPass = strlen(pwd) - 1;
   //Lunghezza Pass
 
+  if(lPass <= 0)
+    puts("PLEASE INSERT PASSWORD\n");
+
+  }while(lPass <= 0);
+  
   while ((c = getchar()) != EOF)
   {//Finche non finisce il file
     
